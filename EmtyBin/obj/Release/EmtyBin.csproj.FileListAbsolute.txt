@@ -1,0 +1,11 @@
+D:\myprojects\RecycleEmpty\EmtyBin\bin\Release\EmtyBin.exe
+D:\myprojects\RecycleEmpty\EmtyBin\bin\Release\EmtyBin.pdb
+D:\myprojects\RecycleEmpty\EmtyBin\obj\Release\EmtyBin.csprojAssemblyReference.cache
+D:\myprojects\RecycleEmpty\EmtyBin\obj\Release\Interop.Shell32.dll
+D:\myprojects\RecycleEmpty\EmtyBin\obj\Release\EmtyBin.csproj.ResolveComReference.cache
+D:\myprojects\RecycleEmpty\EmtyBin\obj\Release\EmtyBin.Form1.resources
+D:\myprojects\RecycleEmpty\EmtyBin\obj\Release\EmtyBin.Properties.Resources.resources
+D:\myprojects\RecycleEmpty\EmtyBin\obj\Release\EmtyBin.csproj.GenerateResource.cache
+D:\myprojects\RecycleEmpty\EmtyBin\obj\Release\EmtyBin.csproj.CoreCompileInputs.cache
+D:\myprojects\RecycleEmpty\EmtyBin\obj\Release\EmtyBin.exe
+D:\myprojects\RecycleEmpty\EmtyBin\obj\Release\EmtyBin.pdb

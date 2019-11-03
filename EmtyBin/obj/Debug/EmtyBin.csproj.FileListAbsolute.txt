@@ -1,0 +1,11 @@
+D:\myprojects\RecycleEmpty\EmtyBin\bin\Debug\EmtyBin.exe
+D:\myprojects\RecycleEmpty\EmtyBin\bin\Debug\EmtyBin.pdb
+D:\myprojects\RecycleEmpty\EmtyBin\obj\Debug\EmtyBin.csprojAssemblyReference.cache
+D:\myprojects\RecycleEmpty\EmtyBin\obj\Debug\EmtyBin.Form1.resources
+D:\myprojects\RecycleEmpty\EmtyBin\obj\Debug\EmtyBin.Properties.Resources.resources
+D:\myprojects\RecycleEmpty\EmtyBin\obj\Debug\EmtyBin.csproj.GenerateResource.cache
+D:\myprojects\RecycleEmpty\EmtyBin\obj\Debug\EmtyBin.csproj.CoreCompileInputs.cache
+D:\myprojects\RecycleEmpty\EmtyBin\obj\Debug\EmtyBin.exe
+D:\myprojects\RecycleEmpty\EmtyBin\obj\Debug\EmtyBin.pdb
+D:\myprojects\RecycleEmpty\EmtyBin\obj\Debug\Interop.Shell32.dll
+D:\myprojects\RecycleEmpty\EmtyBin\obj\Debug\EmtyBin.csproj.ResolveComReference.cache
