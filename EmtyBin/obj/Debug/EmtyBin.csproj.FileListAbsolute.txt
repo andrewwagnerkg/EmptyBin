@@ -9,3 +9,13 @@ D:\myprojects\RecycleEmpty\EmtyBin\obj\Debug\EmtyBin.exe
 D:\myprojects\RecycleEmpty\EmtyBin\obj\Debug\EmtyBin.pdb
 D:\myprojects\RecycleEmpty\EmtyBin\obj\Debug\Interop.Shell32.dll
 D:\myprojects\RecycleEmpty\EmtyBin\obj\Debug\EmtyBin.csproj.ResolveComReference.cache
+D:\gitHubRepos\EmptyBin\EmtyBin\bin\Debug\EmtyBin.exe
+D:\gitHubRepos\EmptyBin\EmtyBin\bin\Debug\EmtyBin.pdb
+D:\gitHubRepos\EmptyBin\EmtyBin\obj\Debug\EmtyBin.csprojAssemblyReference.cache
+D:\gitHubRepos\EmptyBin\EmtyBin\obj\Debug\Interop.Shell32.dll
+D:\gitHubRepos\EmptyBin\EmtyBin\obj\Debug\EmtyBin.csproj.ResolveComReference.cache
+D:\gitHubRepos\EmptyBin\EmtyBin\obj\Debug\EmtyBin.frmMain.resources
+D:\gitHubRepos\EmptyBin\EmtyBin\obj\Debug\EmtyBin.Properties.Resources.resources
+D:\gitHubRepos\EmptyBin\EmtyBin\obj\Debug\EmtyBin.csproj.GenerateResource.cache
+D:\gitHubRepos\EmptyBin\EmtyBin\obj\Debug\EmtyBin.exe
+D:\gitHubRepos\EmptyBin\EmtyBin\obj\Debug\EmtyBin.pdb

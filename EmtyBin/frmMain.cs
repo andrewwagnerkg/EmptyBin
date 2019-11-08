@@ -4,14 +4,15 @@ using System.Windows.Forms;
 
 namespace EmtyBin
 {
-    public partial class Form1 : Form
+    public partial class frmMain : Form
     {
         RecycleWorker worker;
+        Microsoft.Win32.RegistryKey myKey = Microsoft.Win32.Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Run", true);
 
-        public Form1(Shell32.Folder re)
+        public frmMain(Shell32.Folder recycle)
         {
             InitializeComponent();
-            worker = new RecycleWorker(re);
+            worker = new RecycleWorker(recycle);
             worker.Empty += Worker_Empty;
             worker.NotEmpty += Worker_NotEmpty;
         }
@@ -28,21 +29,6 @@ namespace EmtyBin
             Invoke(new MethodInvoker(() => toolStripMenuItem1.Enabled = false));
         }
 
-        private void ContextMenu_Opening(object sender, CancelEventArgs e)
-        {
-
-        }
-
-        private void Notify_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void ContextMenu_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void ToolStripMenuItem3_Click(object sender, EventArgs e)
         {
             worker.Dispose();
@@ -56,10 +42,9 @@ namespace EmtyBin
 
         private void ToolStripMenuItem5_Click(object sender, EventArgs e)
         {
-            Microsoft.Win32.RegistryKey myKey = Microsoft.Win32.Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Run", true);
+            
             try
             {
-               
                 if (myKey.GetValue("EmptyBin").ToString() != Application.ExecutablePath)
                     myKey.SetValue("EmptyBin", Application.ExecutablePath);
             }
@@ -69,12 +54,15 @@ namespace EmtyBin
             }
         }
 
-        private void УдалитьИзАвтозагрузкиToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Microsoft.Win32.RegistryKey myKey = Microsoft.Win32.Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Run", true);
+            worker.ClearRecycle();
+        }
+
+        private void DelFromAutostartToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             try
             {
-                
                 if (myKey.GetValue("EmptyBin").ToString() == Application.ExecutablePath)
                     myKey.DeleteValue("EmptyBin");
             }
@@ -82,11 +70,6 @@ namespace EmtyBin
             {
                 myKey.DeleteValue("EmptyBin");
             }
-        }
-
-        private void ToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            worker.ClearRecycle();
         }
     }
 }

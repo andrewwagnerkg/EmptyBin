@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace EmtyBin
@@ -16,8 +14,8 @@ namespace EmtyBin
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Shell32.Shell shell = new Shell32.Shell();
-            Shell32.Folder re = shell.NameSpace(10);
-            Application.Run(new Form1(re));
+            Shell32.Folder recycle = shell.NameSpace(10);
+            Application.Run(new frmMain(recycle));
         }
     }
 }

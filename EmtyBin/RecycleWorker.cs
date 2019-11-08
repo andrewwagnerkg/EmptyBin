@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.IO;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -14,7 +9,8 @@ namespace EmtyBin
     {
         public event Action Empty;
         public event Action NotEmpty;
-        Thread thread;
+        Thread currentthread;
+        bool isRun = true;
 
         enum RecycleFlags : uint
         {
@@ -26,22 +22,22 @@ namespace EmtyBin
         [DllImport("Shell32.dll", CharSet = CharSet.Unicode)]
         static extern uint SHEmptyRecycleBin(IntPtr hwnd, string pszRootPath, RecycleFlags dwFlags);
 
-        Shell32.Folder re1;
-        public RecycleWorker(Shell32.Folder re)
+        private readonly Shell32.Folder recycle;
+        public RecycleWorker(Shell32.Folder recycle)
         {
-            re1 = re;
-            thread = new Thread(Run);
-            thread.Start();
+            this.recycle = recycle;
+            currentthread = new Thread(Run);
+            currentthread.Start();
         }
 
         [STAThread]
         private void Run()
         {
-            while (true)
+            while (isRun)
             {
                 try
                 {
-                    int count = re1.Items().Count;
+                    int count = recycle.Items().Count;
                     if (count != 0)
                         NotEmpty?.Invoke();
                     else
@@ -57,14 +53,7 @@ namespace EmtyBin
 
         public void Dispose()
         {
-            try
-            {
-                thread.Abort();
-            }
-            catch
-            {
-
-            }
+            isRun = false;
         }
 
         internal void ClearRecycle()
