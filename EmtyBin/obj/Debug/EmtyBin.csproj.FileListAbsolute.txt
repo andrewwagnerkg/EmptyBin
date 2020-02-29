@@ -11,7 +11,6 @@ D:\myprojects\RecycleEmpty\EmtyBin\obj\Debug\Interop.Shell32.dll
 D:\myprojects\RecycleEmpty\EmtyBin\obj\Debug\EmtyBin.csproj.ResolveComReference.cache
 D:\gitHubRepos\EmptyBin\EmtyBin\bin\Debug\EmtyBin.exe
 D:\gitHubRepos\EmptyBin\EmtyBin\bin\Debug\EmtyBin.pdb
-D:\gitHubRepos\EmptyBin\EmtyBin\obj\Debug\EmtyBin.csprojAssemblyReference.cache
 D:\gitHubRepos\EmptyBin\EmtyBin\obj\Debug\Interop.Shell32.dll
 D:\gitHubRepos\EmptyBin\EmtyBin\obj\Debug\EmtyBin.csproj.ResolveComReference.cache
 D:\gitHubRepos\EmptyBin\EmtyBin\obj\Debug\EmtyBin.frmMain.resources

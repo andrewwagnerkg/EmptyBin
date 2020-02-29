@@ -30,7 +30,7 @@ namespace EmtyBin
             currentthread.Start();
         }
 
-        [STAThread]
+        //[STAThread]
         private void Run()
         {
             while (isRun)
@@ -45,7 +45,7 @@ namespace EmtyBin
                 }
                 catch(Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    //MessageBox.Show(ex.Message);
                 }
                 Thread.Sleep(10);
             }

@@ -71,5 +71,10 @@ namespace EmtyBin
                 myKey.DeleteValue("EmptyBin");
             }
         }
+
+        private void notify_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+
+        }
     }
 }
